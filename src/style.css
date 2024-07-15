@@ -1,5 +1,9 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+
+    /* @import url('boxicons/css/boxicons.min.css') */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -110,13 +114,13 @@ section{
 }
 .btn-box{
     position: relative;
-            display:flex;
-            justify-content:space-between;
-        width: 34.5rem;
-        height: 5rem;
+     display:flex;
+    justify-content:space-between;
+    width: 34.5rem;
+    height: 7rem;
 }
 .btn-box .btn{
-    position: relative;
+        position: relative;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -135,7 +139,7 @@ section{
 
 }
 .btn-box a:hover{
-    color: red;
+    color:black
    }
 
 
@@ -145,11 +149,11 @@ section{
     color:var(--text-color);
    }
 .btn-box .btn:nth-child(2):hover{
-    color:red;
+    color:rgb(59, 19, 19)
    }
 
 .btn-box .btn:nth-child(2)::before{
-    background:green;
+    background:var(--bg-color);
    }
 
 
@@ -160,7 +164,7 @@ section{
     left: 0;
     width: 0%;
     height: 100%;
-    background:var(--bg-color);
+    background:var(--main-color);
     z-index: -1;
     transition: .5s;
 }
@@ -240,6 +244,7 @@ span{
 }
 
 .about-img{
+    
     position:relative;
     width: 25rem;
     height: 25rem;
@@ -253,7 +258,7 @@ span{
         width: 90%;
         border-radius: 50%;
         border: .2rem solid var(--main-color);
-
+        
     } 
     .about-img.circle-spin{
         position:absolute;
@@ -263,8 +268,7 @@ span{
         width: 100%;
         height: 100%;
         border-radius: 50%;
-        border-top: .2rem solid red;
-        border-bottom: .2rem solid red;
+        
         border-left: .2rem solid var(--main-color);
         border-right: .2rem solid var(--main-color);
     }
@@ -298,15 +302,10 @@ span{
           align-items: center;
             flex-direction: column;
             min-height: auto;
-            padding-bottom: 15rem;
+            padding-bottom: .5rem;
          }
 
-
-
-
-
-
-   .Education-content{
+.Education-content{
     font-size: 25px;
     margin: 20px 0 40px;
     color: var(--text-color);
@@ -327,11 +326,14 @@ span{
 
 .Education-row.Education-column{
     flex: 1 1 40rem;
+
+   
 }
 
 .Education-column.title{
     font-size: 2.5rem;
     margin: 0 0 2.5rem 2rem;
+    
 
 }
 .Education-column.Education-box{
@@ -374,26 +376,29 @@ span{
     background: var(--bg-color);
 }
 .skills.skills-row{
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    gap:10rem
+    gap:30rem;
+    
 }
 
 .skills-row.skills-column{
     flex: 1 1 50rem;
+    
+}
+
+.skills-column .title{  
+    font-size: 55rem;
+    
 
 }
 
-.skills-column .title{
-    font-size: 4rem;
-
-}
-
-.skills-box .skills-content{
+.skills-box.skills-content{
     position:relative;
     border: .2rem solid var(--main-color);
-    border-radius:1.6rem;
+    border-radius:auto;
     padding: 1.5rem 2.5rem;
+   
 
 }
 .skills-content .progrss{
@@ -411,8 +416,8 @@ span{
 }
 
 .skills-content .progrss .bar {
-    height: 2.5rem;
-    border-radius: .7rem;
+    height: auto;
+    border-radius: auto;
     border: 2rem solid var(--main-color);
     padding: .5rem;
     margin: 1rem 0 ;
@@ -421,16 +426,16 @@ span{
 .skills-content .progrss .bar span{
     display: block;
     height: 100%;
-    border-radius: .3rem;
+    border-radius: auto;
     background: var(--main-color);
 
 }
 
 .skills-column:nth-child(1).skills-content .progrss:nth-child(1).bar span{
-    width: 90%;
+    width: 60%;
 }
 .skills-column:nth-child(1).skills-content .progrss:nth-child(2).bar span{
-    width: 80%;
+    width: 60%;
 }
 .skills-column:nth-child(1).skills-content .progrss:nth-child(3).bar span{
     width: 65%;
@@ -442,18 +447,21 @@ span{
 
 .contact{
     min-height: auto;
+    
     padding-bottom: 7rem;
 
 }
-.contact form {
+.contact form.input-box {
     max-width: 70rem;
     margin: 0 auto;
     text-align: center;
+    display:inline-block;
+    justify-content:space-evenly;
 
 }
 .contact form .input-box{
-    position: relative;
-    display: flex;
+    position: relative; 
+    display: inline-block;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -461,19 +469,26 @@ span{
 
 .contact.input-box.input-field{
     position: relative;
-    width: 50%;
+    display: block;
+    width: 10%;
     margin: .8rem 0 ;
+    justify-content: space-evenly;
 }
 
 .contact form .input-box .input-field input,
-.contact form textarea-field textarea {
-    width: 100%;
+.contact form .textarea-field textarea {
+    width: auto;
     height: 100%;
-    padding: 1.5rem;
+    padding: 1.2rem;
     font-size: 1.6rem;
     color: var(--text-color);
     background: transparent;
-    border-radius: .6rem;
+    border-radius: 1rem;
     border: .2rem solid var(--main-color);
     
+}
+.contact.btn-box.btns{
+    height: auto;
+    width: auto;
+    color: #7610c5;
 }
